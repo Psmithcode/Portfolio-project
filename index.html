@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Peyton Smith</title>
+  </head>
+  <body>
+    <div id="pageContainer">
+      <div id="header">
+        <div id="headerTitle">
+          <h1 id="title">Peyton Smith</h1>
+          <h2 id="webDev">Web Developer</h2>
+        </div>
+        <div id="headerLinks">
+          <a href="index.html">Home</a>
+          <a href="index.html">Projects</a>
+          <a href="index.html">Resume</a>
+          <a href="index.html">Contact</a>
+        </div>
+      </div>
+    </div>
+    <script src="p5.min.js"></script>
+    <script src="vanta.topology.min.js"></script>
+    <script>
+      VANTA.TOPOLOGY({
+        el: "#pageContainer",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0xc5b358,
+        backgroundColor: 0x000000,
+      });
+    </script>
+  </body>
+</html>
