@@ -22,11 +22,51 @@
           <h2 id="webDev">Web Developer</h2>
         </div>
         <div id="headerLinks">
-          <a onclick="setActive(this)"><p>Home</p></a>
-          <a onclick="setActive(this)"><p>Projects</p></a>
-          <a onclick="setActive(this)"><p>Resume</p></a>
-          <a onclick="setActive(this)"><p>About</p></a>
+          <a
+            onclick="setActive(this);setDisplay(this)"
+            data-home
+            id="homeButton"
+            ><p>Home</p></a
+          >
+          <a
+            onclick="setActive(this);setDisplay(this)"
+            data-projects
+            id="projectsButton"
+            ><p>Projects</p></a
+          >
+          <a
+            onclick="setActive(this);setDisplay(this)"
+            data-resume
+            id="resumeButton"
+            ><p>Resume</p></a
+          >
+          <a
+            onclick="setActive(this);setDisplay(this)"
+            data-about
+            id="aboutButton"
+            ><p>About</p></a
+          >
+          <a
+            onclick="setActive(this);setDisplay(this)"
+            data-contact
+            id="contactButton"
+            ><p>Contact</p></a
+          >
         </div>
+      </div>
+      <div id="pageContent">
+        <article id="aboutContainer">
+          alskdjghslkdjghsadlkjgsaldkgjbnsdlkjgnsdlakgjhsaldkgjhsldakjghslkdjghsdlkgjhsaldkgjhsldkgjhsalkdjghsaldkjghasldkjghasldkjghsladkjghlskadjghlskadgjh
+        </article>
+        <!-- <article id="contact">
+          alskdjghslkdjghsadlkjgsaldkgjbnsdlkjgnsdlakgjhsaldkgjhsldakjghslkdjghsdlkgjhsaldkgjhsldkgjhsalkdjghsaldkjghasldkjghasldkjghsladkjghlskadjghlskadgjh
+        </article>
+        <article id="resume">
+          alskdjghslkdjghsadlkjgsaldkgjbnsdlkjgnsdlakgjhsaldkgjhsldakjghslkdjghsdlkgjhsaldkgjhsldkgjhsalkdjghsaldkjghasldkjghasldkjghsladkjghlskadjghlskadgjh
+        </article>
+        <article id="projects">
+          alskdjghslkdjghsadlkjgsaldkgjbnsdlkjgnsdlakgjhsaldkgjhsldakjghslkdjghsdlkgjhsaldkgjhsldkgjhsalkdjghsaldkjghasldkjghasldkjghsladkjghlskadjghlskadgjh
+        </article> -->
       </div>
     </div>
     <script src="p5.min.js"></script>
