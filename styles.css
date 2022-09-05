@@ -199,8 +199,8 @@ canvas {
 }
 
 .resumeColumn > ul {
-  margin-left: 28px;
   font-size: 20px;
+  list-style: none;
 }
 
 .resumeColumn > ul > li {
