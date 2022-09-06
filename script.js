@@ -17,30 +17,30 @@ const setActive = (element) => {
 
 const setDisplay = (element) => {
   if (homeButton.classList.contains("active")) {
-    aboutContainer.style.opacity = "0";
-    contactContainer.style.opacity = "0";
-    resumeContainer.style.opacity = "0";
-    projectsContainer.style.opacity = "0";
+    aboutContainer.style.visibility = "hidden";
+    contactContainer.style.visibility = "hidden";
+    resumeContainer.style.visibility = "hidden";
+    projectsContainer.style.visibility = "hidden";
   } else if (aboutButton.classList.contains("active")) {
-    aboutContainer.style.opacity = "1";
-    contactContainer.style.opacity = "0";
-    resumeContainer.style.opacity = "0";
-    projectsContainer.style.opacity = "0";
+    aboutContainer.style.visibility = "visible";
+    contactContainer.style.visibility = "hidden";
+    resumeContainer.style.visibility = "hidden";
+    projectsContainer.style.visibility = "hidden";
   } else if (contactButton.classList.contains("active")) {
-    aboutContainer.style.opacity = "0";
-    contactContainer.style.opacity = "1";
-    resumeContainer.style.opacity = "0";
-    projectsContainer.style.opacity = "0";
+    aboutContainer.style.visibility = "hidden";
+    contactContainer.style.visibility = "visible";
+    resumeContainer.style.visibility = "hidden";
+    projectsContainer.style.visibility = "hidden";
   } else if (resumeButton.classList.contains("active")) {
-    aboutContainer.style.opacity = "0";
-    contactContainer.style.opacity = "0";
-    resumeContainer.style.opacity = "1";
-    projectsContainer.style.opacity = "0";
+    aboutContainer.style.visibility = "hidden";
+    contactContainer.style.visibility = "hidden";
+    resumeContainer.style.visibility = "visible";
+    projectsContainer.style.visibility = "hidden";
   } else if (projectsButton.classList.contains("active")) {
-    aboutContainer.style.opacity = "0";
-    contactContainer.style.opacity = "0";
-    resumeContainer.style.opacity = "0";
-    projectsContainer.style.opacity = "1";
+    aboutContainer.style.visibility = "hidden";
+    contactContainer.style.visibility = "hidden";
+    resumeContainer.style.visibility = "hidden";
+    projectsContainer.style.visibility = "visible";
   }
 };
 
