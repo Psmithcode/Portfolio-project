@@ -13,7 +13,6 @@ const setActive = (element) => {
   removeActive();
   element.firstChild.classList.toggle("hide");
   element.classList.toggle("active");
-  console.log([element]);
 };
 
 const setDisplay = (element) => {

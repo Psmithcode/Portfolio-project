@@ -155,29 +155,25 @@
           </div>
           <div id="resumeRow2">
             <h2>Link to my full resume:</h2>
-            <a href="./resume.html" target="_blank">Resume</a>
+            <a href="./resume.html">Resume</a>
           </div>
         </div>
         <article id="projectsContainer">
-          my projects my projectsmy projectsmy projectsmy projectsmy projectsmy
-          projectsmy projectsmy projectsmy projectsmy projectsmy projectsmy
-          projectsmy projectsmy projectsmy projectsmy projectsmy projectsmy
-          projectsmy projectsmy projectsmy projectsmy projectsmy projectsmy
-          projectsmy projectsmy projectsmy projectsmy projectsmy projectsmy
-          projectsmy projectsmy projectsmy projectsmy projectsmy projectsmy
-          projectsmy projectsmy projectsmy projectsmy projectsmy projectsmy
-          projectsmy projectsmy projectsmy projectsmy projectsmy projectsmy
-          projectsmy projectsmy projectsmy projectsmy projectsmy projectsmy
-          projectsmy projectsmy projectsmy projectsmy projectsmy projectsmy
-          projectsmy projectsmy projectsmy projectsmy projectsmy projectsmy
-          projectsmy projectsmy projectsmy projectsmy projectsmy projectsmy
-          projectsmy projects
+          <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+            <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+            <ul data-slides>
+                <li class="slide" data-active><a href="https://psmithcode.github.io/testingcss/"><img src="hairsalon.jpg" alt="Hair salon site"></a></li>
+                <li class="slide"><a href="https://psmithcode.github.io/calculator/"><img src="calculator.jpg" alt="Hair salon site"></a></li>
+                <li class="slide"><a href="https://psmithcode.github.io/evenOddList/"><img src="evenoddlist.jpg" alt="Hair salon site"></a></li>
+        </ul>
         </article>
       </div>
     </div>
     <script src="p5.min.js"></script>
     <script src="vanta.topology.min.js"></script>
     <script src="script.js"></script>
+    <script src="projects.js"></script>
     <script>
       VANTA.TOPOLOGY({
         el: "#pageContainer",
