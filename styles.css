@@ -157,6 +157,7 @@ canvas {
   font-size: 10px;
   height: 10%;
   width: 100%;
+  color: white;
 }
 
 #aboutInfo {
@@ -166,6 +167,7 @@ canvas {
   font-family: "Alumni Sans Pinstripe", sans-serif;
   font-size: 34px;
   font-weight: 900;
+  line-height: 47px;
 }
 
 #profilePic {
