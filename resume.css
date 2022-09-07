@@ -1,65 +1,62 @@
-  :root {
-    --dark: #374151;
-    --darker: #1f2937;
-    --darkest: #111827;
-    --grey: #A2B5BB;
-    --light : #EEE ;
-    --pink: #ec4899;
-    --red: #EB1D36;
-
+:root {
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --grey: #a2b5bb;
+  --light: #eee;
+  --pink: #ec4899;
+  --red: #eb1d36;
 }
 
-*{
+* {
   box-sizing: border-box;
-  font-family: 'Bebas Neue', cursive;
-  
+  font-family: "Bebas Neue", cursive;
 }
 
-body{
+body {
   background-color: var(--dark);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
 .gridContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  background-color: var(--grey);
+  background-color: var(--darkest);
   width: 21cm;
   height: 29.7cm;
   border: 1px black solid;
-  grid-template-areas: "roganPic title title"
-                       "roganPic title title"
-                       "roganPic title title"
-                       "roganPic personal personal"
-                       "roganPic personal personal"
-                       "roganPic personal personal"
-                       "contactDetails workHistory workHistory"
-                       "contactDetails workHistory workHistory"
-                       "contactDetails workHistory workHistory"
-                       "workRefs academicHistory academicHistory"
-                       "workRefs academicHistory academicHistory"
-                       "workRefs academicHistory academicHistory";
-
+  grid-template-areas:
+    "roganPic title title"
+    "roganPic title title"
+    "roganPic title title"
+    "roganPic personal personal"
+    "roganPic personal personal"
+    "roganPic personal personal"
+    "contactDetails workHistory workHistory"
+    "contactDetails workHistory workHistory"
+    "contactDetails workHistory workHistory"
+    "workRefs academicHistory academicHistory"
+    "workRefs academicHistory academicHistory"
+    "workRefs academicHistory academicHistory";
 }
 
-.roganPic{
+.roganPic {
   grid-area: roganPic;
   width: 7cm;
   height: 14.85cm;
-
 }
 
-#roganPic{
+#roganPic {
   object-fit: cover;
   height: 100%;
   width: 100%;
 }
 
-.contactDetails, .workRefs{
+.contactDetails,
+.workRefs {
   grid-area: contactDetails;
 
   width: 7cm;
@@ -67,29 +64,28 @@ body{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: var(--red);
+  background-color: var(--light);
 }
 
 .contactDetails > ul,
-.workRefs > div       {
-  color: var(--grey);
+.workRefs > div {
+  color: var(--darkest);
   list-style: none;
 }
 
-
-
-#contactList > li{
+#contactList > li {
   margin-bottom: 7px;
 }
 
-#contacth2, #workRefh2{
+#contacth2,
+#workRefh2 {
   width: 100%;
   height: 15%;
   /* border: 1px solid black; */
   font-size: 36px;
   justify-content: center;
   text-align: center;
-  color: var(--grey);
+  color: var(--darkest);
   margin: 20px 0 0 0;
 }
 
@@ -97,7 +93,7 @@ body{
   grid-area: workRefs;
   width: 7cm;
   height: 7.425cm;
-  background-color: var(--red);
+  background-color: var(--light);
 }
 
 #workref1 {
@@ -107,7 +103,7 @@ body{
   height: 100%;
   flex-direction: column;
   width: 100%; */
-  
+
   padding: 20px;
   height: 210px;
   display: flex;
@@ -116,26 +112,23 @@ body{
   align-items: center;
 }
 
-#workref1 > p{
-
+#workref1 > p {
   margin: 0;
   font-size: 13px;
-  
-  
 }
 
 .title {
   grid-area: title;
   width: 14cm;
   height: 7.425cm;
-  background-color: var(--grey);
+  background-color: var(--darkest);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 20px;
   margin: 0;
-  color: var(--red);
+  color: var(--light);
 }
 
 .title > h1 {
@@ -145,36 +138,36 @@ body{
   margin-bottom: 0px;
 }
 
-.title > h3{
+.title > h3 {
   font-size: 24pt;
   font-weight: 900;
   width: 95%;
   padding-bottom: 20px;
   padding-top: 2px;
   margin: 20px 20px 20px 0;
-  border-bottom: 5px solid var(--red);
+  border-bottom: 5px solid var(--light);
   justify-content: flex-start;
 }
 
-.personalSkillsContainer{
+.personalSkillsContainer {
   grid-area: personal;
   width: 14cm;
   height: 7.425cm;
-  background-color: var(--grey);
+  background-color: var(--darkest);
   display: flex;
   flex-direction: row;
   margin: 0;
   padding: 10px;
 }
 
-.personalSummary{
+.personalSummary {
   display: flex;
   width: 50%;
   height: 100%;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: var(--grey);
-  color: var(--red);
+  background-color: var(--darkest);
+  color: var(--light);
 }
 
 .personalSummary > h2 {
@@ -189,18 +182,18 @@ body{
   padding-left: 10px;
 }
 
-.coreSkills{
+.coreSkills {
   width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content:first baseline;
+  justify-content: first baseline;
   align-items: flex-start;
-  background-color: var(--grey);
-  color: var(--red);
+  background-color: var(--darkest);
+  color: var(--light);
 }
 
-.coreSkills > h2{
+.coreSkills > h2 {
   padding-left: 30px;
   font-size: 47px;
   margin: 0;
@@ -208,34 +201,34 @@ body{
   margin-bottom: 15px;
 }
 
-#skillsList{
+#skillsList {
   display: flex;
   flex-direction: column;
   font-size: 22px;
   margin-left: 15px;
   list-style: circle;
-  
 }
 
-.workHistory{
+.workHistory {
   grid-area: workHistory;
   width: 14cm;
   height: 7.425cm;
-  background-color: var(--grey);
+  background-color: var(--darkest);
   padding: 10px;
 }
 
-.workHistoryGrid{
+.workHistoryGrid {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(2, 40%);
-  grid-template-areas: "whbox1 whbox3 whbox3"
-                       "whbox2 whbox4 whbox4";
+  grid-template-areas:
+    "whbox1 whbox3 whbox3"
+    "whbox2 whbox4 whbox4";
 }
 
-#whbox1{
+#whbox1 {
   grid-area: whbox1;
-  color: var(--red);
+  color: var(--light);
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -245,23 +238,19 @@ body{
   align-items: flex-start;
 }
 
-#whbox1 > h3{
+#whbox1 > h3 {
   font-size: 24px;
   margin: 0;
 }
 
-
-#whbox1 > p{
+#whbox1 > p {
   font-size: 20px;
   margin: 0;
   padding: 0 10px 10px 10px;
 }
 
-
-
-
-#whbox2{
-  color: var(--red);
+#whbox2 {
+  color: var(--light);
   grid-area: whbox2;
   display: flex;
   flex-direction: column;
@@ -272,15 +261,14 @@ body{
   align-items: flex-start;
 }
 
-#whbox2 > h3{
+#whbox2 > h3 {
   margin: 0;
   font-size: 24px;
   padding-top: 10px;
 }
 
-
-#whbox3{
-  color: var(--red);
+#whbox3 {
+  color: var(--light);
   grid-area: whbox3;
   margin: 0;
   display: flex;
@@ -288,22 +276,20 @@ body{
   align-items: center;
   padding-right: 10px;
   font-size: 15px;
-  
-} 
+}
 
 /* #whbox3List > li::marker{
   font-size: 10px;
 } */
 
-#whbox3 > ul{
+#whbox3 > ul {
   height: 100%;
   width: 100%;
   padding: 0 0 0 60px;
 }
 
-
-#whbox4{
-  color: var(--red);
+#whbox4 {
+  color: var(--light);
   grid-area: whbox4;
   display: flex;
   flex-direction: column;
@@ -324,14 +310,14 @@ body{
   align-items: center;
   font-size: 47px;
   padding: 0 0 0 10px;
-  color: var(--red);
+  color: var(--light);
 }
 
-.academicHistory{
+.academicHistory {
   grid-area: academicHistory;
   width: 14cm;
   height: 7.425cm;
-  background-color: var(--grey);
+  background-color: var(--darkest);
 }
 
 .academicHistory > h2 {
@@ -343,21 +329,21 @@ body{
   align-items: center;
   font-size: 47px;
   padding: 0 0 0 10px;
-  color: var(--red);
+  color: var(--light);
 }
 
-
-.academicHistoryGrid{
+.academicHistoryGrid {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(2, 40%);
-  grid-template-areas: "ahbox1 ahbox3 ahbox3"
-                       "ahbox2 ahbox4 ahbox4";
+  grid-template-areas:
+    "ahbox1 ahbox3 ahbox3"
+    "ahbox2 ahbox4 ahbox4";
 }
 
-#ahbox1{
+#ahbox1 {
   grid-area: ahbox1;
-  color: var(--red);
+  color: var(--light);
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -367,23 +353,19 @@ body{
   align-items: flex-start;
 }
 
-#ahbox1 > h3{
+#ahbox1 > h3 {
   font-size: 24px;
   margin: 0;
 }
 
-
-#ahbox1 > p{
+#ahbox1 > p {
   font-size: 20px;
   margin: 0;
   padding: 0 10px 10px 10px;
 }
 
-
-
-
-#ahbox2{
-  color: var(--red);
+#ahbox2 {
+  color: var(--light);
   grid-area: ahbox2;
   display: flex;
   flex-direction: column;
@@ -394,45 +376,42 @@ body{
   align-items: flex-start;
 }
 
-#ahbox2 > h3{
+#ahbox2 > h3 {
   margin: 0;
   font-size: 24px;
   padding-top: 10px;
 }
 
-
-#ahbox3{
-  color: var(--red);
+#ahbox3 {
+  color: var(--light);
   grid-area: ahbox3;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   padding-right: 10px;
-} 
+}
 
-#ahbox3List > li::marker{
+#ahbox3List > li::marker {
   font-size: 10px;
 }
 
-#ahbox3 > ul{
+#ahbox3 > ul {
   height: 100%;
   width: 100%;
   padding: 0 0 0 60px;
   font-size: 18px;
 }
 
-
-#ahbox4 > ul{
+#ahbox4 > ul {
   height: 100%;
   width: 100%;
   /* padding: 0 0 0 60px; */
   font-size: 18px;
 }
 
-
-#ahbox4{
-  color: var(--red);
+#ahbox4 {
+  color: var(--light);
   grid-area: ahbox4;
   display: flex;
   flex-direction: column;
@@ -452,7 +431,5 @@ body{
   align-items: center;
   font-size: 47px;
   padding: 0 0 0 10px;
-  color: var(--red);
+  color: var(--light);
 }
-
-
