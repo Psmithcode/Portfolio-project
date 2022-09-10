@@ -22,6 +22,7 @@
   </head>
   <body>
     <div id="pageContainer">
+      <!-- HEADER  -->
       <div id="header">
         <div id="headerTitle">
           <h1 id="title">Peyton Smith</h1>
@@ -38,7 +39,7 @@
             onclick="setActive(this);setDisplay(this)"
             data-projects
             id="projectsButton"
-            ><p>Projects</p></a
+            ><p>Projects</p  a
           >
           <a
             onclick="setActive(this);setDisplay(this)"
@@ -60,7 +61,9 @@
           >
         </div>
       </div>
+      <!-- PAGE CONTENT -->
       <div id="pageContent">
+        <!-- ABOUT CONTAINER -->
         <article id="aboutContainer">
           <div id="haskellContainer">
             <div id="haskellImg">
@@ -70,9 +73,6 @@
               By Larry D. Moore, CC BY-SA 4.0,
               https://commons.wikimedia.org/w/index.php?curid=47360568
             </p>
-          </div>
-          <div id="profilePic">
-            <img src="rogan.jpg" alt="profile picture">
           </div>
           <p id="aboutInfo">
             Born in 2001. Raised in a small rural Texas town named Haskell. I've
@@ -84,21 +84,20 @@
             I'm a life-long learner and I'm always looking for tricks to implement in my designs.
             Challenging myself is my hobby. The greater the challenge, the greater the lesson learned.
           </p>
+          <div id="profilePic">
+            <img src="rogan.jpg" alt="profile picture">
+          </div>
         </article>
+        <!-- CONTACT CONTAINER -->
         <article id="contactContainer">
           <h1 id="contactTitle">I'd love to hear from you</h1>
-          <div id="contactInfo">
-            <h1>Contact me</h1>
-            <p>Email: peytonsmith53@gmail</p>
-            <p>Phone Number: (940)-203-1823</p>
-          </div>
           <form id="contactForm">
             <label for="email"> Email:</label>
             <input
-              type="email"
-              id="email"
-              name="email"
-              required
+            type="email"
+            id="email"
+            name="email"
+            required
               pattern=".+@globex\.com"
               minlength="4"
               placeholder="Enter email here"
@@ -113,23 +112,29 @@
             />
             <label for="lastName">Last Name:</label>
             <input
-              type="text"
-              id="lastName"
-              name="lastName"
-              required
-              placeholder="Enter last name here"
+            type="text"
+            id="lastName"
+            name="lastName"
+            required
+            placeholder="Enter last name here"
             />
             <label for="comments">Additional Comments:</label>
             <textarea
-              name="comments"
-              id="contactComments"
-              cols="30"
-              rows="10"
+            name="comments"
+            id="contactComments"
+            cols="30"
+            rows="10"
             ></textarea>
-
+            
             <input type="submit" value="Submit" />
           </form>
+          <div id="contactInfo">
+            <h1>Contact me</h1>
+            <p>Email: peytonsmith53@gmail</p>
+            <p>Phone Number: (940)-203-1823</p>
+          </div>
         </article>
+        <!-- RESUME CONTAINER -->
         <div id="resumeContainer">
           <div id="resumeColumn1" class="resumeColumn">
             <h2>Core Skills:</h2>
@@ -164,6 +169,7 @@
             <a href="./resume.html">Resume</a>
           </div>
         </div>
+        <!-- PROJECTS CONTAINER -->
         <article id="projectsContainer">
           <div class="carousel" data-carousel>
             <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
@@ -176,6 +182,7 @@
         </article>
       </div>
     </div>
+    <!-- SCRIPTS -->
     <script src="p5.min.js"></script>
     <script src="vanta.topology.min.js"></script>
     <script src="script.js"></script>
